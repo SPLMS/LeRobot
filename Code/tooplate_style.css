@@ -10,8 +10,8 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 18px; 
-	background-color: #202020; 
-	background-image: url(images/tooplate_body.jpg);
+	background-color: #e8e8e8; 
+	background-image: url(images/背景3.jpg);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -115,7 +115,7 @@ ul.list_bullet li a:hover { color: #797979 }
 }
 
 #site_title { position: absolute; top: 35px; left: 0; width: 300px; height: 60px; }
-#site_title a { display: block; padding: 40px 0 0 0; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 300px; color: #acacac; background: url(images/tooplate_logo.png) no-repeat left top }
+#site_title a { display: block; padding: 239px 0 0 0; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 379px; color: #acacac; background: url(images/tooplate_logo.png) no-repeat left top }
 
 #tooplate_search {
 	position: absolute;
@@ -186,7 +186,7 @@ ul.list_bullet li a:hover { color: #797979 }
 #tooplate_wrapper {
 	width: 984px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 100px;
 }
 
 
@@ -197,7 +197,7 @@ ul.list_bullet li a:hover { color: #797979 }
 	width: 900px;
 	padding: 30px 44px;
 	margin-bottom: 10px;
-	background: url(images/tooplate_main_content.png) repeat-y
+	background: url(images/tooplate_main_content.jpg) repeat-y
 }
 #tooplate_main_bottom {
 	position: absolute;
@@ -205,7 +205,7 @@ ul.list_bullet li a:hover { color: #797979 }
 	left: 0;
 	width: 984px;
 	height: 10px;
-	background: url(images/tooplate_main_content_bottom.png)
+	background: url(images/tooplate_main_content_bottom.jpg)
 }
 
 /**** Menu ****/
