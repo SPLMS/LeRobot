@@ -44,6 +44,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
 .h30 { height: 30px }
 .h60 { height: 60px }
 
+.peixun{ font-style: 隶书; font-size:20px; }
+
 img { margin: 0; padding: 0; border: 0; }
 .img_border { border: 1px solid #000; background: #111; }
 .img_border_s { padding: 4px }
