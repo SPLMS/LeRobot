@@ -9,10 +9,10 @@
 
 /*Top level list items*/
 .ddsmoothmenu ul li{
-	position: relative;
-	display: inline;
+	position: right;
+	display: block;
 	float: left;
-	padding-right: 2px;
+	padding-right: 0px;
 	background:url(../images/tooplate_menu_divider.png) center right no-repeat
 }
 
@@ -20,10 +20,10 @@
 .ddsmoothmenu ul li a {
 	display: block;
 	height: 45px;
-	width: 120px;
+	width: 100px;
 	line-height: 40px;
 	font-size: 13px;
-	color: #fff;	
+	color: white;
 	text-align: center;
 	text-decoration: none;
 	font-weight: 400;
@@ -36,7 +36,7 @@ display: inline-block;
 .ddsmoothmenu ul li.last { background: none }
 
 .ddsmoothmenu ul li a.selected, .ddsmoothmenu ul li a:hover { /*CSS class that's dynamically added to the currently active menu items' LI A element*/
-	background: #950a0a;
+	background: none;
 }
 
 /*1st sub level menu*/
@@ -56,7 +56,7 @@ display: inline-block;
 
 /*Sub level menu list items (undo style from Top level List Items)*/
 .ddsmoothmenu ul li ul li{
-display: list-item;
+display:block;
 float: none;
 background: none;
 }
