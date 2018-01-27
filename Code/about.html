@@ -19,8 +19,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
-<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,900,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 
@@ -77,18 +75,25 @@ ddsmoothmenu.init({
 <div id="tooplate_header_wrapper">
 	<div id="tooplate_header">
     	<div id="site_title"><a href="index.html">www.LeRobot.com</a></div>
-        <div id="tooplate_search">
-            <form action="#" method="get">
-              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-            </form>
-            <ul id="social">
-                <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
-				<li><a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a></li>
-            </ul>
-        </div>
+        <div class="header-top-left1">
+                     <!-- start search-->
+                        <div class="search-box">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span class="sb-icon-search"> </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- search-scripts -->
+                        <script src="js/classie.js"></script>
+                        <script src="js/uisearch.js"></script>
+                            <script>
+                                new UISearch( document.getElementById( 'sb-search' ) );
+                            </script>
+                        <!-- //search-scripts -->
+                </div>
         <ul id="top_menu">
         	<li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -120,6 +125,8 @@ ddsmoothmenu.init({
                         <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test1</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>

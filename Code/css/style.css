@@ -160,9 +160,10 @@ body a:hover{
 }
 .navbar-nav {
     float: left;
+
 }
 .navbar {
-    min-height: 62px;
+    min-height: 2px;
     margin-bottom: 0;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -170,7 +171,7 @@ body a:hover{
     background-color: #E57057;
 }
 .navbar-nav > li > a {
-    padding: 8px 20px;
+    padding: 1px 10px;
 }
 .navbar-default .navbar-nav > li > a {
     color: #FFF;
@@ -208,7 +209,7 @@ body a:hover{
   left: 0;
   right: 0;
   bottom: 0;
-  background: #00CCFF;
+  background: #6495ED;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 0;
@@ -1632,7 +1633,7 @@ p.in{
 		margin: 26px 0 0;
 	}
 	.navbar-nav {
-		float: none;
+		float: left;
 		text-align: center;
 		margin: 0;
 		background-color: #08A797;
