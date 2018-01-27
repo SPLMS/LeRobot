@@ -2,7 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Red Mod - About-js1</title>
+<title>Red Mod - About</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Erudition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <!--
@@ -53,19 +71,26 @@ ddsmoothmenu.init({
 
 <div id="tooplate_header_wrapper">
     <div id="tooplate_header">
-        <div id="site_title"><a href="index.html">Free Website Template</a></div>
-        <div id="tooplate_search">
-            <form action="#" method="get">
-              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-            </form>
-            <ul id="social">
-                <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
-                <li><a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a></li>
-            </ul>
-        </div>
+        <div id="site_title"><a href="index.html">www.LeRobot.com.cn</a></div>
+        <div class="header-top-left1">
+                     <!-- start search-->
+                        <div class="search-box">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span class="sb-icon-search"> </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- search-scripts -->
+                        <script src="js/classie.js"></script>
+                        <script src="js/uisearch.js"></script>
+                            <script>
+                                new UISearch( document.getElementById( 'sb-search' ) );
+                            </script>
+                        <!-- //search-scripts -->
+                </div>
         <ul id="top_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -76,35 +101,41 @@ ddsmoothmenu.init({
 
 <div id="tooplate_wrapper">
 
-         <div id="tooplate_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a>
-                    <ul>
-                        <li><a href="news.html">Category One</a></li>
-                        <li><a href="news.html">Category Two</a></li>
-                        <li><a href="news.html">Category Three</a></li>
-                        <li><a href="news.html">Category Four</a></li>
-                        <li><a href="news.html">Category Five</a></li>                                                                        
-                    </ul>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html" class="selected">About</a></li>                
-                <li class="last"><a href="contact.html">Contact</a></li>
-            </ul>
-            <br style="clear: left" />
-        </div> <!-- end of tooplate_menu -->
+        <div id="tooplate_menu" >
+    
+        <div class="container">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
-    <div id="tooplate_main"> <div id="tooplate_main_bottom"></div>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="news.html">news</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test1</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+        </div>
+        <ul></ul>
+        <br style="clear: left " />
+    </div>
+
+   <div id="tooplate_main"> <div id="tooplate_main_bottom"></div>
         <div id="one">
             <h2>中国青少年机器人竞赛</h2>
-                <style>
-                ul li{
-                      width:100px;
-                      height:40px;
-                      float:left;//或者用right根据自己需求
-                     }
-                </style>
+             <div id="top_menu1">
             <ul>
                 <li><a href="#done">竞赛简介</a></li>
                 <li><a href="#dtwo">竞赛指导</a></li>
@@ -112,9 +143,9 @@ ddsmoothmenu.init({
                 <li><a href="js2.html">竞赛资料</a></li>
                 <li><a href="js3.html">竞赛规则</a></li>
             </ul>
+            </div>  
         </div>
-        <div class="clear"></div>
-
+         <div class="clear"></div>
         <div id="done">
             <h3>竞赛简介</h3>
             <p style="color: black">中国青少年机器人竞赛创办于2001年，面向全国中小学生开展的一项将知识积累、技能培养、探究性学习融为一体的普及性科技教育活动。竞赛为广大青少年机器人爱好者在电子信息、自动控制以及机器人高新科技领域进行学习、探索、研究、实践搭建成果展示和竞技交流的平台，旨在通过富有挑战性的比赛项目，将学生在课程中的多学科知识和技能融入竞赛过程中，激发学生对工程技术的学习兴趣，培养学生的创新意识、动手实践能力和团队精神，提高科学素质。自2001年起，每年举办一届，至今已举办十六届。经过十多年发展，中国青少年机器人竞赛在普及机器人工程技术知识，推动机器人教育活动开展等方面发挥了积极作用，已成为国内面向青少年机器人爱好者所举办的规模最大、管理规范、认可度高、影响广泛的竞赛活动。<br/>竞赛发展历程和规模:<br/>2001年，中国科协青少部、霍英东基金会、全国妇联儿童中心共同在广东省广州市南沙科技馆发起组织了首届全国青少年电脑机器人竞赛，随后又依次在广东广州、河南郑州、广西南宁举办了第二届至第四届竞赛，2005年在陕西西安第五届全国青少年电脑机器人竞赛更名为中国青少年机器人竞赛，2006年在云南昆明，第六届中国青少年机器人竞赛调整为由中国科协和承办省人民政府共同主办，第七届至第十六届竞赛分别在重庆、湖南长沙、青海西宁、北京、河南郑州、天津市、吉林长春、新疆乌鲁木齐、内蒙古鄂尔多斯、北京(中国科学院大学)举办。今年，全国共有9000多支队伍、25000多名中小学生参加各省级青少年机器人竞赛选拔赛，辅导教练员超过5000人，服务比赛的裁判员数量约1000人，参与学校数量达到3700所。经过省级竞赛选拔，共有来自31个省、自治区、直辖市，以及新疆生产建设兵团，香港和澳门特别行政区的513支参赛队、1400多名选手、400多名教练员入围全国竞赛，此外，还有嘉宾、专家、评委、裁判、领队、志愿者、工作人员和媒体记者共400多人，总人数约2500人。</p>
@@ -136,8 +167,7 @@ ddsmoothmenu.init({
         </div >
            
     </div>
-    
-</div>
+    </div>
 
     <div id="tooplate_footer">
         <div class="col_5">
