@@ -100,7 +100,7 @@ ul.list_bullet li a:hover { color: #797979 }
 #tooplate_header_wrapper {
 	height: 123px;
 	background: url(images/tooplate_header.jpg) repeat-x;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 #tooplate_header {
 	position: relative;
@@ -247,7 +247,11 @@ ul.list_bullet li a:hover { color: #797979 }
 	top: 70px;
 	right: 0;
 }
-
+#top_menu1 ul li{
+    width:100px;
+    height:40px;
+    float:left;//或者用right根据自己需求 
+}
 #top_menu li {
 	display: block;
 	float: left;
