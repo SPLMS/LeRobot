@@ -2,7 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Red Mod - About -js2</title>
+<title>Red Mod - About</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Erudition Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <!--
@@ -54,18 +72,25 @@ ddsmoothmenu.init({
 <div id="tooplate_header_wrapper">
     <div id="tooplate_header">
         <div id="site_title"><a href="index.html">www.LeRobot.com.cn</a></div>
-        <div id="tooplate_search">
-            <form action="#" method="get">
-              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-            </form>
-            <ul id="social">
-                <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
-                <li><a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a></li>
-            </ul>
-        </div>
+        <div class="header-top-left1">
+                     <!-- start search-->
+                        <div class="search-box">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span class="sb-icon-search"> </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- search-scripts -->
+                        <script src="js/classie.js"></script>
+                        <script src="js/uisearch.js"></script>
+                            <script>
+                                new UISearch( document.getElementById( 'sb-search' ) );
+                            </script>
+                        <!-- //search-scripts -->
+                </div>
         <ul id="top_menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -76,30 +101,43 @@ ddsmoothmenu.init({
 
 <div id="tooplate_wrapper">
 
-         <div id="tooplate_menu" class="ddsmoothmenu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a>
-                    <ul>
-                        <li><a href="news.html">Category One</a></li>
-                        <li><a href="news.html">Category Two</a></li>
-                        <li><a href="news.html">Category Three</a></li>
-                        <li><a href="news.html">Category Four</a></li>
-                        <li><a href="news.html">Category Five</a></li>                                                                        
-                  </ul>
-                </li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="about.html" class="selected">About</a></li>                
-                <li class="last"><a href="contact.html">Contact</a></li>
-            </ul>
-            <br style="clear: left" />
-        </div> <!-- end of tooplate_menu -->
+    <div id="tooplate_menu" >
+    
+        <div class="container">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
-    <div id="tooplate_main"> <div id="tooplate_main_bottom"></div>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="news.html">news</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test1</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                </nav>
+        </div>
+        <ul></ul>
+        <br style="clear: left " />
+    </div>
+
+   <div id="tooplate_main"> <div id="tooplate_main_bottom"></div>
         <h2>竞赛资料</h2>
          <p style="font-style: 隶书 ; font-size: 6 ;color: black">中国青少年机器人竞赛从最开始的一个竞赛项目，一直到2016年整合为现在的机器人综合技能比赛、机器人创意比赛、FLL机器人工程挑战赛、VEX机器人工程挑战赛和WER工程创新赛五个竞赛项目，集知识性、竞技性、趣味性为一体的竞赛一直吸引着广大青少年。<br>机器人综合技能比赛面向中小学生，在一块固定的场地上设置数个不同难度的任务，要求参加比赛的代表队在完全封闭的现场自行拼装机器人、编制机器人运行程序、调试和操作机器人。机器人综合技能比赛可以检验青少年对机器人技术的理解、对机械结构的认识以及对基本程序编写的掌握程度，可以激发青少年对机器人技术的兴趣，培养他们动手、动脑的能力。经过比赛，学生们不仅完成自己的比赛机器人，也提升了对科技和利用科技来积极影响周围世界的认识。<br>机器人创意比赛是一项自由度比较高的竞赛，每年设置一个主题。学生在辅导老师的指导下，在学校、家庭、校外机器人工作室或科技实验室里，以个人或小组的方式进行智能机器人的创意、设计、编程与制作，最后完成自己的机器人创意作品参加大赛展示和评选，整个制作过程可以持续6个月左右。是一项充分发挥青少年创新性思维，培养团队协作能力，展现他们综合素质的竞赛项目。<br>FLL机器人工程挑战赛是一项青少年国际机器人比赛项目，整个竞赛分为现场竞技、技术问辩、课题研究几个部分，在培养青少年机器人兴趣和技能的同时鼓励他们关注社会，积极运用科学和工程学知识解决各种问题。比赛每年设置一个主题，围绕主题设计十余项任务，由机器人在固定场地内完成，同时要求参赛团队结合生活对这个主题开展课题研究，最后还要在技术问辩时进行课题介绍和展示团队风采，这也是对参加活动青少年的一次综合、全面的考察。<br>VEX机器人工程挑战赛也是一项国际青少年机器人比赛项目，每年设置一个主题并设计新的竞技内容。比赛采用联队对抗形式进行，参赛青少年通过遥控器控制己方的两个机器人获得尽量多的分数，同时还要合理运用战略防止对方得分。VEX比赛对抗性强、展示性高，深受青少年的喜爱。<br>WER工程创新赛是今年新设立的赛项，比赛设置与年度主题有关的模拟场景任务，要求参赛队在现场拼装机器人、编程、调试和操作机器人，完成比赛任务。比赛检验青少年对机器人技术的理解和掌握程度，激发青少年对机器人技术的兴趣，培养动手能力。</p>
 
         <div class="clear"></div>
+    </div>
     </div>
 
     <div id="tooplate_footer">
