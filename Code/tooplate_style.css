@@ -1,4 +1,4 @@
-/*
+﻿/*
 Template 2069 Red Mod
 http://www.tooplate.com/view/2069-red-mod
 */
@@ -136,7 +136,16 @@ ul.list_bullet li a:hover { color: #797979 }
 	padding: 0;
 	background: url(images/tooplate_search.png)
 }
-
+.test{
+	position:absolute;
+	left:200px;
+	top:150px;
+}
+.testback
+{
+	background: url(images/背景3.jpg);
+	padding: 0 0 740px;
+}
 #tooplate_search .txt_field {
 	float: left;
 	display: block;
@@ -340,7 +349,7 @@ ul.rc_comment li span { color: #333 }
 .pagging { margin: 0 0 20px; padding: 0 }
 .pagging ul { margin: 0; padding: 0; list-style: none }
 .pagging ul li { margin: 0; padding: 0; display: inline }
-.pagging ul li a { float: left; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
+.pagging ul li a { float: right; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
 .pagging ul li a:hover { background: #771201; border: 1px solid #5f0e00; color: #fff }
 
 
