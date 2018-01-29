@@ -1,8 +1,3 @@
-﻿/*
-Template 2069 Red Mod
-http://www.tooplate.com/view/2069-red-mod
-*/
-
 body {
 	margin: 0;
 	padding: 0 0 20px;
@@ -13,10 +8,8 @@ body {
 	background-color: #e8e8e8; 
 	background-image: url(images/背景3.jpg);
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: stop;
 }
-
-
 h1, h2, h3, h4, h5, h6 {
 	color:black;
 	font-weight:400;
@@ -24,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 10px 0;
 	font-family: Verdana, Geneva, sans-serif;
 }
-
 h1 { font-size:34px; margin-bottom: 35px  }
 h2 { font-size:26px; margin-bottom: 30px; line-height: 30px; }
 h3 { font-size:20px; line-height: 24px }
@@ -108,7 +100,7 @@ ul.list_bullet li a:hover { color: #797979 }
 #tooplate_header_wrapper {
 	height: 123px;
 	background: url(images/tooplate_header.jpg) repeat-x;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 #tooplate_header {
 	position: relative;
@@ -120,32 +112,109 @@ ul.list_bullet li a:hover { color: #797979 }
 #site_title { position: absolute; top: 15px; left: 0; width: 300px; height: 60px; }
 #site_title a { display: block; padding: 85px 0 0 0; font-size: 12px; font-family: Georgia, "Times New Roman", Times, serif; width: 379px; color: #acacac; background: url(images/tooplate_logo.png) no-repeat left top }
 
-#tooplate_search {
+
+
+/*start search*/
+.sb-search {
 	position: absolute;
+	right: 80px;
+	top: 0;
+	width: 0%;
+	min-width: 52px;
+    margin: 0;
+    height: 54px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+	background: #6495ED;
+}
+.sb-search-input {
+	position: absolute;
+	top: 13px;
+    left: 1px;
+    border: none;
+    outline: none;
+    background: #6495ED;
+    width: 100%;
+    height: 30px;
+	margin: 0;
+	z-index: 10;
+	font-size: 13px;
+	color:#FDFEFF;
+	padding-left: 1em;
+}
+.sb-search-input::-webkit-input-placeholder {
+	color:#FDFEFF;
+}
+.sb-search-input:-moz-placeholder {
+	color: #ffffff;
+}
+.sb-search-input::-moz-placeholder {
+	color: #efb480;
+}
+.sb-search-input:-ms-input-placeholder {
+	color: #ffffff;
+}
+.sb-icon-search,.sb-search-submit  {
+	width: 52px;
+    height: 54px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 85px;
+	text-align: center;
+	cursor: pointer;
+}
+.sb-search-submit {
+	background: #6495ED url('images/search.png') no-repeat 16px 17px;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+	-webkit-appearance: none;
+}
+.sb-icon-search {
+   background: #6495ED url('images/search.png') no-repeat 16px 17px;
+	z-index: 90;
+}
+/* Open state */
+.sb-search.sb-search-open,.no-js .sb-search {
+	width:48.7%;
+}
+.sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
+	background: #c0c0c0 url('../images/img-sprite.png') no-repeat 0px 1px;
+	color: #fff;
+	z-index: 11;
+}
+.sb-search.sb-search-open .sb-search-submit,.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+
+#tooplate_search {
+	/*position: absolute;
 	top:0; right: 0;
 	padding: 5px 5px 5px 35px;
 	width: 412px;
 	height: 32px;
-	background: url(images/tooplate_topbar.png)
+	background: url(images/tooplate_topbar.png)*/
 }
 #tooplate_search form {
-	float: left;
+	/* float: left;
 	width: 241px;
 	height: 32px;
 	margin: 0;
 	padding: 0;
-	background: url(images/tooplate_search.png)
+	background: url(images/tooplate_search.png) */
 }
-.test{
-	position:absolute;
-	left:200px;
-	top:150px;
-}
-.testback
-{
-	background: url(images/背景3.jpg);
-	padding: 0 0 740px;
-}
+
 #tooplate_search .txt_field {
 	float: left;
 	display: block;
@@ -178,7 +247,11 @@ ul.list_bullet li a:hover { color: #797979 }
 	top: 70px;
 	right: 0;
 }
-
+#top_menu1 ul li{
+    width:100px;
+    height:40px;
+    float:left;//或者用right根据自己需求 
+}
 #top_menu li {
 	display: block;
 	float: left;
@@ -215,7 +288,7 @@ ul.list_bullet li a:hover { color: #797979 }
 	position: absolute;
 	bottom: -10px;
 	left: 0;
-	width: 1184px;
+	width: 988px;
 	height: 10px;
 	background: url(images/tooplate_main_content_bottom.jpg)
 }
@@ -349,13 +422,12 @@ ul.rc_comment li span { color: #333 }
 .pagging { margin: 0 0 20px; padding: 0 }
 .pagging ul { margin: 0; padding: 0; list-style: none }
 .pagging ul li { margin: 0; padding: 0; display: inline }
-.pagging ul li a { float: right; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
+.pagging ul li a { float: left; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
 .pagging ul li a:hover { background: #771201; border: 1px solid #5f0e00; color: #fff }
 
-
-
-
-
+.BBS {width:500px ; float: left ;}
+.BBS2 {width:300px; float: right;}
+.BBS1 {overflow: hidden; width: 100% ;}
 
 
 
