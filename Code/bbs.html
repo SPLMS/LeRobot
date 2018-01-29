@@ -33,9 +33,9 @@ http://www.tooplate.com/view/2069-red-mod
 <script type="text/javascript" src="js/jquery-1.6.3.min.js" ></script>
 <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
-	});
+    $(document).ready(function(){
+        $("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+    });
 </script>
 
 <link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
@@ -53,11 +53,11 @@ http://www.tooplate.com/view/2069-red-mod
 <script type="text/javascript">
 
 ddsmoothmenu.init({
-	mainmenuid: "tooplate_menu", //menu DIV id
-	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
-	classname: 'ddsmoothmenu', //class added to menu's outer DIV
-	//customtheme: ["#1c5a80", "#18374a"],
-	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+    mainmenuid: "tooplate_menu", //menu DIV id
+    orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+    classname: 'ddsmoothmenu', //class added to menu's outer DIV
+    //customtheme: ["#1c5a80", "#18374a"],
+    contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
 })
 
 </script>
@@ -71,29 +71,22 @@ ddsmoothmenu.init({
 <body>
 
 <div id="tooplate_header_wrapper">
-	<div id="tooplate_header">
-    	<div id="site_title"><a href="index.html">www.LeRobot.com</a></div>
-         <div class="header-top-left1">
-                     <!-- start search-->
-                        <div class="search-box">
-                            <div id="sb-search" class="sb-search">
-                                <form>
-                                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-                                    <input class="sb-search-submit" type="submit" value="">
-                                    <span class="sb-icon-search"> </span>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- search-scripts -->
-                        <script src="js/classie.js"></script>
-                        <script src="js/uisearch.js"></script>
-                            <script>
-                                new UISearch( document.getElementById( 'sb-search' ) );
-                            </script>
-                        <!-- //search-scripts -->
-                </div>
+    <div id="tooplate_header">
+        <div id="site_title"><a href="index.html">www.LeRobot.com</a></div>
+        <div id="tooplate_search">
+            <form action="#" method="get">
+              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+            <ul id="social">
+                <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
+                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
+                <li><a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a></li>
+            </ul>
+        </div>
         <ul id="top_menu">
-        	<li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         
@@ -118,13 +111,12 @@ ddsmoothmenu.init({
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
-                      <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
+                        <li class="hvr-bounce-to-bottom active"><a href="index.html">Home</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="news.html">news</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="gallery.html">Gallery</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="about.html">About</a></li>
                         <li class="hvr-bounce-to-bottom"><a href="contact.html">Contact Us</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="BBS.html">BBS</a></li>
-                        <li class="hvr-bounce-to-bottom"><a href="contact.html">Test1</a></li>
+                        <li class="hvr-bounce-to-bottom"><a href="bbs.html">BBS</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -134,66 +126,226 @@ ddsmoothmenu.init({
     </div>
 
     <div id="tooplate_main"> <div id="tooplate_main_bottom"></div>
-    	
-        <div class="BBS1">
-            <div class="BBS">
-                <h2><a href="fullpost.html">LeRobot</a></h2>
-                <!--<img class="img_border img_border_b" src="images/news/01.jpg" alt="Post Image" /> -->
-                <video height="300" controls="controls">
-                <source src="images/BBS/青少年机器人大赛视频-国语高清.mp4" type="video/mp4" />
-                </video>
-                <div class="BBS">
-                    <span class="post_author"><a href="#">LeRobot</a></span>
-                    <span class="date"><a href="#">Jan 28, 2018</a></span>
-                    <span class="tag"><a href="#">中国青少年机器人大赛</a>
+        <div id="tooplate_content" class="left">
+            <div class="post">
+                <h2><a href="fullpost.html">Lorem Ipsum Dolor Sit Amet</a></h2>
+                <img class="img_border img_border_b" src="images/news/01.jpg" alt="Post Image" />
+                <div class="post_meta">
+                    <span class="post_author"><a href="#">Admin</a></span>
+                    <span class="date"><a href="#">Oct 24, 2048</a></span>
+                    <span class="tag"><a href="#">Graphics</a>, <a href="#">Design</a></span>
+                    <span class="comment">16</span>
                 </div>                    
-                <a class="more" href="http://robot.xiaoxiaotong.org/">大赛官网</a>
+                <p>我们将在这里提供一个平台供广大家长和老师互相交流学习，希望大家都多多发言，互相帮忙</p>
+                <a class="more" href="fullpost.html">More</a>
             </div>
             
-            <div class="BBS2">
-                <h3>推荐文章</h3>
-                <ul class="sidebar_link">
-                    <li><a href="#">2017robocup获奖团队</a></li>
-                    <li><a href="#">2018robocup比赛报名方式</a></li>
-                    <li><a href="#">2017robocup比赛视频</a></li>
-                    <li><a href="#">各类培训机构推荐</a></li>
-                    <li><a href="#">山东省各市中考加分政策解读</a></li>
-                    <li><a href="#">2017中国青少年机器人大赛视频</a></li>
-                    <li><a href="#">看教育专家对青少年机器人的看法</a></li>
-                    <li><a href="#">2018年中国机器人大赛报名方式</a></li>
-                    <li><a href="#">2018年中国机器人大赛报名方式</a></li>
-                    <li><a href="#">2018年中国机器人大赛报名方式</a></li>
+            
+            
+
+
+
+    
+    <div class="collapse navbar-collapse nav-wil" >      
+        <table width="160%" border="0" cellspacing="0" cellpadding="7" class="tab-bbs-list tab-bbs-list-2">
+                <colgroup>          
+                    <col class="col-title" />
+                    <col class="" />
+                    <col class="" />
+                    <col class="" />
+                    <col class="col-date" />
+                </colgroup>
+                <tbody>
+                    <tr>    
+                        <th scope="col">&nbsp;标题</th>
+                        <th scope="col">作者</th>
+                        <th scope="col">点击</th>
+                        <th scope="col">回复</th>
+                        <th scope="col">回复时间</th>
+                    </tr>
+                </tbody>
+                
+                <tr class="sidebar_link">         
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            北京大学是贵族学校，穷人的孩子上北大无益
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html" target="_blank" class="author">gatewaytosuccess</a></td>
+                    <td>632</td>
+                    <td>26</td>
+                    <td title="2018-01-27 00:26">01-27 00:26</td>
+                </tr>
+            
+                <tr>            
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            信号系统是通信与信息要素结合的整体,整体功能大于各要素功能之和。(转载)
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html" target="_blank" class="author">pingliuwmr</a></td>
+                    <td>11</td>
+                    <td>0</td>
+                    <td title="2018-01-26 20:54">01-26 20:54</td>
+                </tr>
+            
+                <tr class="bg">         
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html"target="_blank">
+                            北大，北大，北大又出幺蛾子了，学生举报导师。
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html" target="_blank" class="author">九年博士</a></td>
+                    <td>207</td>
+                    <td>5</td>
+                    <td title="2018-01-26 15:24">01-26 15:24</td>
+                </tr>
+            
+                <tr>            
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            一个00后对从古至今社会金字塔的理解
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html" target="_blank" class="author">lysongguohui</a></td>
+                    <td>22</td>
+                    <td>0</td>
+                    <td title="2018-01-23 17:15">01-23 17:15</td>
+                </tr>
+            
+                <tr class="bg">         
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html"target="_blank">
+                            2018年北大经双备考方法
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">xmy969512</a></td>
+                    <td>11</td>
+                    <td>0</td>
+                    <td title="2018-01-23 16:58">01-23 16:58</td>
+                </tr>
+            
+                <tr>            
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html"target="_blank">
+                            谈谈暗物质暗能量以及力的统一 宏观与微观的统一
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">lncchinayuan</a></td>
+                    <td>16</td>
+                    <td>0</td>
+                    <td title="2018-01-23 16:53">01-23 16:53</td>
+                </tr>
+            
+                <tr class="bg">         
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            校园大学生魅惑美妆教您怎么使用产品，做美丽女人
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">meihuomeizhuang</a></td>
+                    <td>28</td>
+                    <td>2</td>
+                    <td title="2018-01-19 18:27">01-19 18:27</td>
+                </tr>
+            
+                <tr>            
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            51talk上的菲律宾老师教学方式，一般的中国学生能适应的了吗？
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">we21543</a></td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td title="2018-01-19 17:00">01-19 17:00</td>
+                </tr>
+            
+                <tr class="bg">         
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            西安交大能动学院教授吴裕远与杀人犯合谋杀四川籍博士生
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">ningmeng625</a></td>
+                    <td>190</td>
+                    <td>3</td>
+                    <td title="2018-01-19 12:21">01-19 12:21</td>
+                </tr>
+            
+                <tr>            
+                    <td class="td-title faceblue">
+                        <span class="face" title="普通帖"></span>
+                        <a href="bbs.html" target="_blank">
+                            《自然生活》一书之序——散文三篇（原创散文）<span class="art-ico art-ico-3" title="内有9张图片"></span>
+                        </a>
+                    </td> 
+                    <td><a href="bbs.html"target="_blank" class="author">地球村子abc</a></td>
+                    <td>229</td>
+                    <td>75</td>
+                    <td title="2018-01-19 12:00">01-19 12:00</td>
+                </tr>
+               
+        </table>  
+        <a class="more" href="fatie.html">发帖</a>  
+    </div>
+    <div id="ft"></div>
+    <div class="pagging">
+                <ul>
+                    <li><a href="#" target="_parent">Previous</a></li>
+                    <li><a href="#" target="_parent">1</a></li>
+                    <li><a href="#" target="_parent">2</a></li>
+                    <li><a href="#" target="_parent">3</a></li>
+                    <li><a href="#" target="_parent">4</a></li>
+                    <li><a href="#" target="_parent">5</a></li>
+                    <li><a href="#" target="_parent">6</a></li>
+                    <li><a href="#" target="_parent">Next</a></li>
                 </ul>
-            </div>  
-        </div>
-    <hr/>
+                <div class="clear"></div>
+            </div>
+</div> <!-- END of content -->
+
+
 
         
-    <div class="pagging">
-        <ul>
-            <li><a href="#" target="_parent">Previous</a></li>
-            <li><a href="#" target="_parent">1</a></li>
-            <li><a href="#" target="_parent">2</a></li>
-            <li><a href="#" target="_parent">3</a></li>
-            <li><a href="#" target="_parent">4</a></li>
-            <li><a href="#" target="_parent">5</a></li>
-            <li><a href="#" target="_parent">6</a></li>
-            <li><a href="#" target="_parent">Next</a></li>
-        </ul>
-        <div class="clear"></div>
-    </div>
+
+
+        <div id="tooplate_sidebar" class="right">
             
+            <div class="content_wrapper content_mb_60">
+                <h3>推荐阅读</h3>
+                <ul class="sidebar_link">
+                    <li><a href="#">Consectetur adipiscing eli</a></li>
+                    <li><a href="#">Nullam vulputate est</a></li>
+                    <li><a href="#">Duis porta velit</a></li>
+                    <li><a href="#">Pretium suscipit</a></li>
+                    <li><a href="#">Nullam eu diam</a></li>
+                    <li><a href="#">Duis in libero est</a></li>
+                    <li><a href="#">Aenean tincidunt</a></li>
+                    <li><a href="#">Morbi tempus iaculis</a></li>
+                </ul>
+            </div>
             
-   
+      </div>
         
         <div class="clear"></div>
                 
+</div>
 
-	<div id="tooplate_footer">
-    	<div class="col_5">
-        	<h4>Pages</h4>
+    <div id="tooplate_footer">
+        <div class="col_5">
+            <h4>Pages</h4>
             <ul class="nobullet bottom_list">
-            	<li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About</a></li>
@@ -202,7 +354,7 @@ ddsmoothmenu.init({
         </div>
         
         <div class="col_5">
-        	<h4>Our Partners</h4>
+            <h4>Our Partners</h4>
             <ul class="nobullet bottom_list">
                 <li><a href="#">Digital Image Gallery</a></li>
                 <li><a href="#">HTML Web Templates</a></li>
@@ -213,9 +365,9 @@ ddsmoothmenu.init({
         </div>
         
          <div class="col_5">
-        	<h4>Links</h4>
+            <h4>Links</h4>
             <ul class="nobullet bottom_list">
-            	<li><a href="#">Aliquamel</a></li>
+                <li><a href="#">Aliquamel</a></li>
                 <li><a href="#">Molestie Arcu</a></li>
                 <li><a href="#">Placerat Nec</a></li>
                 <li><a href="#">Hendrerit</a></li>
@@ -223,7 +375,7 @@ ddsmoothmenu.init({
             </ul>
         </div>
         <div class="col_25 no_margin_right">
-        	<h4>Twitter</h4>
+            <h4>Twitter</h4>
             <p>"Lorem ipsum dolor sit amet consectetur adipiscing elit <a href="#">#Donec</a> ante nibh sagittis ut lobortis a, posuere vel sem"</p>
             <a href="#">Follow me on Twitter</a>
         </div>
