@@ -422,7 +422,7 @@ ul.rc_comment li span { color: #333 }
 .pagging { margin: 0 0 20px; padding: 0 }
 .pagging ul { margin: 0; padding: 0; list-style: none }
 .pagging ul li { margin: 0; padding: 0; display: inline }
-.pagging ul li a { float: left; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
+.pagging ul li a { float: left; display: block; color: blue; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
 .pagging ul li a:hover { background: #771201; border: 1px solid #5f0e00; color: #fff }
 
 .BBS {width:500px ; float: left ;}
