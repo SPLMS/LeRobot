@@ -72,24 +72,30 @@ ddsmoothmenu.init({
 
 <div id="tooplate_header_wrapper">
     <div id="tooplate_header">
-        <div id="site_title"><a href="index.html">www.LeRobot.com</a></div>
-        <div id="tooplate_search">
-            <form action="#" method="get">
-              <input type="text" value=" " name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
-              <input type="submit" name="Search" value=" " alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
-            </form>
-            <ul id="social">
-                <li><a href="#"><img src="images/rss.png" alt="RSS" /></a></li>
-                <li><a href="#"><img src="images/facebook.png" alt="Facebook" /></a></li>
-                <li><a href="#"><img src="images/twitter.png" alt="Twitter" /></a></li>
-                <li><a href="#"><img src="images/linkedin.png" alt="Linkedin" /></a></li>
-            </ul>
-        </div>
-        <ul id="top_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div id="site_title"><a href="index.html">www.LeRobot.com.cn</a></div>
+            <div class="header-top-left1">
+                     <!-- start search-->
+                        <div class="search-box">
+                            <div id="sb-search" class="sb-search">
+                                <form>
+                                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                                    <input class="sb-search-submit" type="submit" value="">
+                                    <span class="sb-icon-search"> </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- search-scripts -->
+                        <script src="js/classie.js"></script>
+                        <script src="js/uisearch.js"></script>
+                            <script>
+                                new UISearch( document.getElementById( 'sb-search' ) );
+                            </script>
+                        <!-- //search-scripts -->
+                </div>
+         <ul id="top_menu">
+            <li><a href="login.html">登陆</a></li>
+            <li><a href="sign-up.html">注册</a></li>
         </ul>
-        
     </div> <!-- END of header -->
 </div> <!-- END of header wrapper -->
 
@@ -319,6 +325,7 @@ ddsmoothmenu.init({
         <a class="more" href="fatie.html">发帖</a>  
     </div>
     <div id="ft"></div>
+    <br>
     <div class="pagging">
                 <ul>
                     <li><a href="#" target="_parent">Previous</a></li>

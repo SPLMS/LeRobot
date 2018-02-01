@@ -423,27 +423,57 @@ ul.rc_comment li span { color: #333 }
 .pagging { margin: 0 0 20px; padding: 0 }
 .pagging ul { margin: 0; padding: 0; list-style: none }
 .pagging ul li { margin: 0; padding: 0; display: inline }
-.pagging ul li a { float: left; display: block; color: #666; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
+.pagging ul li a { float: left; display: block; color: blue; text-decoration: none; margin-right: 5px; padding: 5px 10px; background: #111; border: 1px solid #000}
 .pagging ul li a:hover { background: #771201; border: 1px solid #5f0e00; color: #fff }
 
 .BBS {width:500px ; float: left ;}
 .BBS2 {width:300px; float: right;}
 .BBS1 {overflow: hidden; width: 100% ;}
 
+.search{margin: 0px 40px 0px 0px;padding-top:10px ;} 
+#content {
+    width: 800px;
+    margin: 0 auto;
+    height: 400px;
+}
+/*.content{font-size:14px;font-weight: 600;}*/
+/*.sort1{padding:5px 10px;font-size:12px}*/
+/*.sort1 { margin-top:0px;width:100%; border:hidden;}*/	  
+.sort1 li{ float:left;width:33.33%;height:35px; line-height:35px; text-align:center; padding:0px 0px;}
+.sort1 li a{font-size:16px;}
+/*.sort1 li.first1 {color: #F03726;}*/
+.sort1 {padding:0px 0px;border-radius: 0px 0px 4px 4px; margin:10px 10px; font-size: 12px;width:auto;overflow: hidden;}
+.sort1 li{ display:inline; height:35px; line-height:35px; padding:0px 20px;width:auto;border-right:1px dotted #ddd;}
+.first1{display:block;border: none;} 
+.sort1 li.first1{background: #F5F5F5;color: #000000;}
+.sort1 li.first1 {color: #000000;}
+.first1{ margin-top: 0; }
+.first1{border:1px solid:#000;}
+.first {color: #000000;}
+.first{background: #F5F5F5;color: #000;}
+.first1{ margin-top: 0; }
+.first1 {border-top:none;}
+.first1{ margin-top: 0; }
+.first1{border:none ;}
+.first1 {color: #000000;}
+.first1{background: #F5F5F5;color: #000;}
+.first1{ margin-top: 0; }
+
+.market1{width: 295px; height: 400px;}
+
+.market2 > li {
+    width: 33.33333333%;
+  }
+.market2 > li:nth-of-type(n) {
+    clear: none;
+  }
+.market2 > li:nth-of-type(3n + 1) {
+    clear: both;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.market3 {font-size: 1.4em;text-align: center;padding:8px;font-weight: 600; color: #23238E;}
+.market4 {font-size: 1.2em;text-align: center;padding:8px;font-weight: 600; color: #000000;}
 
 
 
@@ -1088,9 +1118,4 @@ tbody.collapse.in {
   border-bottom-color: #ebccd1;
 }
 
-
-
-
-
-
-
+ 
